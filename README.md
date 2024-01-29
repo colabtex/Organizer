@@ -1,6 +1,6 @@
 # Project Title
 
-* [PurpleBooth/REAME-Template.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) - Github gist that this example readme came from (to be customized for this project)
+[PurpleBooth/REAME-Template.md](https://gist.github.com/PurpleBooth/109311bb0361f32d87a2) - Gist that this example readme came from (to be customized for this project)
 
 One Paragraph of project description goes here
 
