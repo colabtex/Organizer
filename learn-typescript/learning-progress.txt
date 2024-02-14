@@ -1,5 +1,5 @@
-Pick back up the video below at 28:08
+Pick back up the video below (timestamped at 28:07)
 
 [Programming with Mosh]
 "TypeScript Tutorial for Beginners"
-https://www.youtube.com/watch?v=d56mG7DezGs
+https://youtu.be/d56mG7DezGs?t=1686
