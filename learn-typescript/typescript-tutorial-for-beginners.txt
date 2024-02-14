@@ -1,0 +1,43 @@
+React Tutorial Notes
+
+Youtube Channel: Programming with Mosh
+Video Title: TypeScript Tutorial for Beginners
+URL: https://www.youtube.com/watch?v=d56mG7DezGs
+
+What is typescript
+Why use typescript
+How is it different from vanilla JS?
+
+Purpose: to overcome some of the shortcomings of JS
+TS is built off of JS
+every JS file is a valid TS file
+
+Benefits
+    - Static typing
+    - Code completion
+    - Refactoring
+    - Shorthand notations
+
+With statically-typed (ST) languages, the type of variable is known when the code is compiled
+With DT languages the types are defined at runtime, and can change
+
+Dynaically-typed languages are great for allowing you to do thing
+
+For example, running Math.round(number) is good when "number" is equal to 5
+However, running that when "number" is equal to "five" would be bad
+
+You may not want to allow the code to compile when number is "five"
+You probably wouldn't ever, but sometimes whether code is (or should be) valid or not isn't always so clear
+
+Put in another way, TS is JS with type-checking (and some other things, discussed later)
+(if you're familiar with Java, this may be familiar to you)
+
+This typing also makes it easier to know whether or not you're "using a variable in incorrect contexts", in a non-technical sense
+
+Code Completiong and Recactoring are also made possible from type-checking
+
+With TS, a compilation process is always involved - because browsers don't understand TS
+Instead, TS code is compiled into JS, a process known as "Transpilation"
+
+In general, though simple applications are great candidates for JS, larger projects (especially those involving teams) are better off handled by TS
+
