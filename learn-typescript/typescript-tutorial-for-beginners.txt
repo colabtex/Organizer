@@ -46,3 +46,23 @@ To compile TS into JS, in terminal, run > tsc index.ts
 Notice that even though types are specified within TS files, when it is compiled into JS, there's no mention of types (because vanilla JS doesn't use/read types)
 
 An important part of using TS when you start is to first run [tsc --init] in terminal to create a file to define configuration of TS
+
+It's also a good idea to configure a launch.json file (see example in git)
+
+With VS Code, TS allows you to use debuggers to see variables as they change, even adding "watchers" (google is your friend here for more info)
+
+JS has built-in types like:
+    number
+    string
+    boolean
+    null
+    undefined
+    object
+
+TS includes types such as
+    any
+    unknown
+    never
+    enum
+    tuple
+
