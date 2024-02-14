@@ -1,5 +1,6 @@
-let age: number = 20;
+let is_published: boolean = true;
 
-if (age < 50)
-  age += 10;
-console.log(age)
+// Can remove annotations from variable declarations, since TS can infer types when they are being initialized
+let sales = 123_456_789;
+let course = 'TypeScript';
+let level;

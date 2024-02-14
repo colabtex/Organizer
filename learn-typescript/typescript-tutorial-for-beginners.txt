@@ -66,3 +66,14 @@ TS includes types such as
     enum
     tuple
 
+With TS, you can separate digits and it still be considered a number, helpful for readability, such as 1_800_605_4512 (may or may not be a real number - don't know, don't care)
+
+You can remove annotations from variable declarations, since TS can infer types when they are being initialized
+
+If using the "any" type (which is what you get by not defining the type) -> but doing so avoids the entire benefit of type-checking (the major feature of TS)!
+
+Many functions, like [function render(document) {console.log(document)}] will have compilation errors, because the function prohibits the "any" type
+
+As a solution, you can explictly annotate the the variable with the "any" type when passing it to the function, such as in function [render(document: any)]
+
+You could also turn off "strict" mode by changing line (after uncommenting) to []"noImplicitAny": false] - since this removes the main benefit of TS, this is basically a "nuclear" option, and typically isn't a good idea
