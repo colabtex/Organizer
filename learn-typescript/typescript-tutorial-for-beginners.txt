@@ -41,3 +41,8 @@ Instead, TS code is compiled into JS, a process known as "Transpilation"
 
 In general, though simple applications are great candidates for JS, larger projects (especially those involving teams) are better off handled by TS
 
+To compile TS into JS, in terminal, run > tsc index.ts
+
+Notice that even though types are specified within TS files, when it is compiled into JS, there's no mention of types (because vanilla JS doesn't use/read types)
+
+An important part of using TS when you start is to first run [tsc --init] in terminal to create a file to define configuration of TS
