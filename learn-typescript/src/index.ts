@@ -1,8 +1,24 @@
-// Valid array, as the types of the elements match the types in the annotation
-// (and in the proper order)
-let user: [number, string] = [1, 'Johnny'];
+// ENUMS
 
-// One shortfall of TS is that you can still push to the array like the one above
-// (even though it shouldn not be allow based on the rules of TS)
-// This is because it still compiles to valid JS -> { let user = [1, 'Johnny']; user.push(2); }
-user.push(2);
+// All three versions of SingleDigitNums are equivalent and evaluate to the same thing 
+// However, notice the third version generates much more optimized code
+
+// enum SingleDigitNums { Small, Medium, Large};
+// enum SingleDigitNums { Small=0, Medium=1, Large=2};
+const enum SingleDigitNums { Small, Medium, Large};
+
+// To start at a different value, you just need to define the value of the first element
+// (TS will infer the rest of the values)
+enum DoubleDigitNums { Small = 10, Medium, Large};
+
+// Use case of enums:
+let singleSize: SingleDigitNums = SingleDigitNums.Medium;
+console.log(singleSize);
+
+// Use case of enums:
+let doubleSize: DoubleDigitNums = DoubleDigitNums.Medium;
+console.log(doubleSize);
+
+
+// Notice you can have much more optimized code by declaring enums with const than let
+// const enum TripleDigitSizes { Small = 100, Medium, Large};
