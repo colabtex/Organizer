@@ -1,8 +1,8 @@
-// Not valid, as only arrays of same types allowed when type has been annotated:
-// let invalid_num: number[] = [1, 2, '3'];
+// Valid array, as the types of the elements match the types in the annotation
+// (and in the proper order)
+let user: [number, string] = [1, 'Johnny'];
 
-// Valid, as all elements in array are of the type specified by the type annotation
-let valid_num_1: number[] = [1, 2, 3];
-
-// Also valid, as the elements in the array are all acceptable by an array of the type "any"
-let valid_num_2: [1, 2, '3'];
+// One shortfall of TS is that you can still push to the array like the one above
+// (even though it shouldn not be allow based on the rules of TS)
+// This is because it still compiles to valid JS -> { let user = [1, 'Johnny']; user.push(2); }
+user.push(2);
