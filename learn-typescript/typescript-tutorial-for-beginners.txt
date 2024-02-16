@@ -77,3 +77,11 @@ Many functions, like [function render(document) {console.log(document)}] will ha
 As a solution, you can explictly annotate the the variable with the "any" type when passing it to the function, such as in function [render(document: any)]
 
 You could also turn off "strict" mode by changing line (after uncommenting) to []"noImplicitAny": false] - since this removes the main benefit of TS, this is basically a "nuclear" option, and typically isn't a good idea
+
+Another helpful thing about the type-checking of TS is with arrays.
+When declaring and defining an array of a certain type, if any of the elements differ in their type, the compiler will throw an error.
+You can also declare an array without annotating the type, and the compiler will throw an error if the types of all the elements in the array are not all the same (even a single one different will cause a compilation error)
+
+Because the compiler checks for the type of the array, code completion is made possible - the IDE is able to suggest functions that can be called by the array, because it knows which functions use that array as one of its valid types
+
+With arrays, you can also declare in your annotation which type is valid for the element at each position ( like [number, string] )
