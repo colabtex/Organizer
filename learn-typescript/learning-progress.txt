@@ -2,4 +2,4 @@ Pick back up the video below (timestamped at 28:07)
 
 [Programming with Mosh]
 "TypeScript Tutorial for Beginners"
-https://youtu.be/d56mG7DezGs?t=1686
+https://youtu.be/d56mG7DezGs?t=2193
